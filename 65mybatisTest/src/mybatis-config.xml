@@ -14,6 +14,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="src/main/java/mapper/StudentMapper.xml"/>
+        <mapper resource="com/sina/mapper/StudentMapper.xml"/>
     </mappers>
 </configuration>
