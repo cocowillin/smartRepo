@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sina</groupId>
-  <artifactId>65mybatisTest</artifactId>
+  <artifactId>66mybatisTest</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
-  <name>65mybatisTest Maven Webapp</name>
+  <name>66mybatisTest Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -52,6 +52,12 @@
       <version>3.5.3</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.3</version>
+      <scope>compile</scope>
+    </dependency>
 
 
   </dependencies>
@@ -68,7 +74,7 @@
         <filtering>false</filtering>
       </resource>
     </resources>
-    <finalName>65mybatisTest</finalName>
+    <finalName>66mybatisTest</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

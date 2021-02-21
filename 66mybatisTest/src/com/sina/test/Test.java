@@ -1,4 +1,4 @@
-package test;
+package com.sina.test;
 
 import domain.Student;
 import org.apache.ibatis.io.Resources;
