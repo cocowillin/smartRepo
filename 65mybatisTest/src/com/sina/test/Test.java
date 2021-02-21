@@ -47,7 +47,7 @@ public class Test {
         session.commit();
 
 
-        Thread.sleep(5000);
+
         List<Student> studentList = session.selectList("test1.getById");
         for (Student s:
                 studentList) {
