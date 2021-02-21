@@ -1,4 +1,5 @@
 
+import domain.Student;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -13,7 +14,7 @@ import java.io.InputStream;
  */
 public class Test1 {
     public static void main(String[] args) {
-        String resource = "src/main/resources/mybatis-config.xml";
+        String resource = "mybatis-config.xml";
         InputStream inputStream=null;
 
         {
