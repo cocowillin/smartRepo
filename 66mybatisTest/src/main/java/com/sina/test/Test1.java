@@ -1,5 +1,6 @@
+package com.sina.test;
 
-import domain.Student;
+import com.sina.domain.Student;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -10,24 +11,20 @@ import java.io.InputStream;
 
 /**
  * @author radio
- * @create 2021-02-20 11:04 PM
+ * @create 2021-02-21 9:51 AM
  */
 public class Test1 {
     public static void main(String[] args) {
+
         String resource = "mybatis-config.xml";
         InputStream inputStream=null;
 
-        {
-            try {
-                inputStream = Resources.getResourceAsStream(resource);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        try {
+            inputStream = Resources.getResourceAsStream(resource);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        SqlSessionFactory
-                sqlSessionFactory =
-                new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session=sqlSessionFactory.openSession();
         Student a0001 = session.selectOne("test1.getById", "a0001");
         System.out.println(a0001);
@@ -35,6 +32,4 @@ public class Test1 {
 
 
     }
-
-
 }
