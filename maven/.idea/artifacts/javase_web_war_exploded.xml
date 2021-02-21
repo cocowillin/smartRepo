@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="javase_web:war exploded">
+    <output-path>$PROJECT_DIR$/javase_web/target/javase_web</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>javase_web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javase_web" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/javase_web/target/javase_web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="javase_web/web/Web" />
+    </root>
+  </artifact>
+</component>
